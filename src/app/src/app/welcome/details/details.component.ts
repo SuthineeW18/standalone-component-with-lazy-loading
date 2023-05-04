@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnalyticsService } from 'src/app/shared/analytics.service';
 
 @Component({
   selector: 'app-details',
@@ -6,8 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent {
-  constructor() {}
+  constructor(private analyticsService: AnalyticsService) {}
 
   onClick() {
+    this.analyticsService.registerClick();
   }
 }
