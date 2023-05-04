@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 3rem;
+    background-color: #2b2b29;
+    color: #f5f3f3;
+}
+
+a {
+    text-decoration: none;
+    color: #b3ed67;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #abc744;
+}
